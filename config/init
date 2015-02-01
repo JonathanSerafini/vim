@@ -1,0 +1,19 @@
+
+let $VIMROOT_GIT=$HOME.'/Bash/vim'
+let $VIMROOT_LOC=$HOME.'/.config/vim'
+
+if isdirectory($VIMROOT_LOC)
+  set runtimepath=$VIMROOT_GIT,$VIMROOT_LOC,$VIMRUNTIME
+else
+  set runtimepath=$VIMROOT_GIT,$VIMRUNTIME
+endif
+
+if filereadable($VIMROOT_GIT.'/config/base')
+  source $VIMROOT_GIT/config/pathogen
+  source $VIMROOT_GIT/config/base
+endif
+
+if filereadable($VIMROOT_LOC.'/vimrc')
+  source $VIMROOT_LOC/vimrc
+endif
+
