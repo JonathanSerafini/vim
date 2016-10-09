@@ -2,6 +2,7 @@ call plug#begin('~/.config/vim/plugins')
 
 " Usability plugins
 "
+Plug 'neomake/neomake', { 'branch': 'master' }
 Plug 'ciaranm/securemodelines', { 'branch': 'master' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
 Plug 'sickill/vim-pasta', { 'branch': 'master' }
