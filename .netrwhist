@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/jonathan/Chef/cookbooks/knife_secure_data_bag/lib/secure_data_bag'
-let g:netrw_dirhist_2='/Users/jonathan/Chef/cookbooks/osr_paleale/templates/default'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/jonathan/Local/cookbooks-private/cml_role_frontend/attributes'
+let g:netrw_dirhist_2='/Users/jonathan/Local/cookbooks-private/cml_role_frontend'
+let g:netrw_dirhist_3='/Users/jonathan/Local/drone-on-ecs/sparkleformation/parameters'
+let g:netrw_dirhist_4='/Users/jonathan/Local/sfn_provision_droneci/parameters'
+let g:netrw_dirhist_5='/Users/jonathan/Chef/repo-ecom'

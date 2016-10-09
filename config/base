@@ -14,34 +14,17 @@ set display=lastline
 set number             " display line numbers
 set cursorline
 
-
-"256 color terminals
-set t_Co=256
+set cc=80              " set colored line at N characters
+set t_Co=256           " 256 color terminals
 
 set backspace=eol,start,indent
-
-" GnuPG
-let g:GPGPreferArmor=1
-let g:GPGPreferSign=1
-
-augroup GnuPGExtra
-  autocmd BufReadCmd,FileReadCmd *.\(gpg\|asc\|pgp\) call SetGPGOptions()
-  autocmd CursorHold *.\(gpg\|asc\|pgp\) quit
-augroup END
-
-function SetGPGOptions()
-  set updatetime=60000
-  set foldmethod=marker
-  set foldclose=all
-  set foldopen=insert
-endfunction
 
 " backup settings
 set nobackup             " disable backup
 set noswapfile
 "set backup              " keep a backup file
-set backupdir=~/tmp/vim  " backup dir
-set directory=~/tmp/vim  " swap file directory
+set backupdir=~/.tmp/vim  " backup dir
+set directory=~/.tmp/vim  " swap file directory
 
 " tabs and indenting
 set expandtab           " insert spaces instead of tab chars
@@ -56,6 +39,10 @@ set incsearch           " increment search
 set ignorecase          " case-insensitive search
 set smartcase           " upper-case sensitive search
 
+" folding
+set foldmethod=syntax
+set foldlevelstart=20
+
 " visual features
 set showmatch           " show matching brackets
 
@@ -63,6 +50,7 @@ set showmatch           " show matching brackets
 autocmd Filetype sh,python,eruby,ruby set textwidth=84
 autocmd Filetype eruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 " enable wildmenu ( :e ~/<path>/<Ctrl+D>
 set wildmenu

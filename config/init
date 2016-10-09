@@ -1,11 +1,11 @@
-
-let $VIMROOT_GIT=$HOME.'/Bash/vim'
+let $VIMROOT_GIT=$HOME.'/Local/env-vim'
 let $VIMROOT_LOC=$HOME.'/.config/vim'
+let $VIMROOT_RUN='/usr/local/share/vim/vim74'
 
 if isdirectory($VIMROOT_LOC)
-  set runtimepath=$VIMROOT_GIT,$VIMROOT_LOC,$VIMRUNTIME
+  set runtimepath=$VIMROOT_GIT,$VIMROOT_LOC,$VIMROOT_RUN
 else
-  set runtimepath=$VIMROOT_GIT,$VIMRUNTIME
+  set runtimepath=$VIMROOT_GIT,$VIMROOT_RUN
 endif
 
 if filereadable($VIMROOT_GIT.'/config/base')
