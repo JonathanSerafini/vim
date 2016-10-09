@@ -1,0 +1,11 @@
+call plug#begin('~/.config/vim/plugins')
+
+Plug 'ciaranm/securemodelines', { 'branch': 'master' }
+Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
+Plug 'elzr/vim-json', { 'branch': 'master' }
+Plug 'ngmy/vim-rubocop', { 'branch': 'master' }
+Plug 'vim-ruby/vim-ruby', { 'tag': 'stable-20160928' }
+
+Plug 'chriskempson/vim-tomorrow-theme', { 'tag': 'v1.0' } 
+
+call plug#end()
