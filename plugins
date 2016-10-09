@@ -1,11 +1,21 @@
 call plug#begin('~/.config/vim/plugins')
 
+" Usability plugins
+"
 Plug 'ciaranm/securemodelines', { 'branch': 'master' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
+Plug 'sickill/vim-pasta', { 'branch': 'master' }
+Plug 'bronson/vim-trailing-whitespace', { 'tag': '1.0'  }
+
+" Language Plugins
+"
 Plug 'elzr/vim-json', { 'branch': 'master' }
 Plug 'ngmy/vim-rubocop', { 'branch': 'master' }
 Plug 'vim-ruby/vim-ruby', { 'tag': 'stable-20160928' }
 
-Plug 'chriskempson/vim-tomorrow-theme', { 'tag': 'v1.0' } 
+" Colorschemes
+"
+Plug 'larsbs/vimterial', { 'branch': 'master' }
+Plug 'chriskempson/vim-tomorrow-theme', { 'tag': 'v1.0' }
 
 call plug#end()
