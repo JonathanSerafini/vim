@@ -19,3 +19,5 @@ Plug 'larsbs/vimterial', { 'branch': 'master' }
 Plug 'chriskempson/vim-tomorrow-theme', { 'tag': 'v1.0' }
 
 call plug#end()
+
+" vim: set ft=vim ts=2 sw=2 et :
