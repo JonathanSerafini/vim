@@ -10,6 +10,7 @@ Plug 'bronson/vim-trailing-whitespace', { 'tag': '1.0'  }
 
 " Language Plugins
 "
+Plug 'jelera/vim-javascript-syntax', { 'tag': '0.8.2' }
 Plug 'elzr/vim-json', { 'branch': 'master' }
 Plug 'ngmy/vim-rubocop', { 'branch': 'master' }
 Plug 'vim-ruby/vim-ruby', { 'tag': 'stable-20160928' }
