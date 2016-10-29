@@ -4,6 +4,7 @@ call plug#begin('~/.config/vim/plugins')
 "
 Plug 'neomake/neomake', { 'branch': 'master' }
 Plug 'ciaranm/securemodelines', { 'branch': 'master' }
+Plug 'junegunn/vim-easy-align', { 'tag': 'v2.10.0' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
 Plug 'sickill/vim-pasta', { 'branch': 'master' }
 Plug 'bronson/vim-trailing-whitespace', { 'tag': '1.0'  }
